@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DemoCustomDirectiveComponent } from './demo-custom-directive/demo-custom-directive.component';
 import { DemoCustomPipesComponent } from './demo-custom-pipes/demo-custom-pipes.component';
 import { DemosComponent } from './demos.component';
 import { IntroDemoComponent } from './intro-demo/intro-demo.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
     path: '', component: DemosComponent, children: [
       { path: 'intro', component: IntroDemoComponent },
       { path: 'custom-pipes', component: DemoCustomPipesComponent },
+      { path: 'custom-directives', component: DemoCustomDirectiveComponent },
     ]
   },
 ];

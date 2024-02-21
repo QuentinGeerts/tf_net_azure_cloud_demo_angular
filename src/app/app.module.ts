@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { TimerComponent } from './components/timer/timer.component';
-import { TimerPipe } from './pipes/timer.pipe';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,14 +22,13 @@ import { TimerPipe } from './pipes/timer.pipe';
     HomeComponent,
     NotFoundComponent,
     NavbarComponent,
-    TimerPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
     CardModule,
-    FormsModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
