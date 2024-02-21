@@ -1,0 +1,27 @@
+<div>
+
+    <!-- Sans Faire la vaissellengModel -->
+    <!-- <input 
+        type="text" 
+        [value]="valueInput" 
+        (input)="updateValue($event)"> -->
+    
+    <!-- Avec ngModel -->
+    <input type="text" [(ngModel)]="valueInput" (keyup.enter)="addTask()">
+    <button (click)="addTask()">Ajouter</button>
+
+    <p>{{ valueInput }}</p>
+
+</div>
+
+
+<h2>Liste des choses à faire :</h2>
+<ul>
+    @for (task of tasks; track $index) {
+        <li>
+            <input type="checkbox" [(ngModel)]="task.done">
+            <span [ngClass]="{ strike: task.done  }">{{ task.label }}</span> &nbsp;
+            <button (click)="removeTask($index)"><i class="pi pi-trash"></i></button>
+        </li>
+    }
+</ul>
