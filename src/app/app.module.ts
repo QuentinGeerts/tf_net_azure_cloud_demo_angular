@@ -8,8 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CompteurComponent } from './components/compteur/compteur.component';
 import { HelloComponent } from './components/hello/hello.component';
+import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { TimerComponent } from './components/timer/timer.component';
-import { ToDoListComponent } from './components/to-do-list/to-do-list.component';
 import { TimerPipe } from './pipes/timer.pipe';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TimerPipe } from './pipes/timer.pipe';
     CompteurComponent,
     TimerComponent,
     TimerPipe,
-    ToDoListComponent,
+    HomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
