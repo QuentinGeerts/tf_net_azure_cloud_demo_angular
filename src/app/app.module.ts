@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { CompteurComponent } from './components/compteur/compteur.component';
 import { HelloComponent } from './components/hello/hello.component';
 import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { TimerComponent } from './components/timer/timer.component';
 import { TimerPipe } from './pipes/timer.pipe';
@@ -19,9 +20,10 @@ import { TimerPipe } from './pipes/timer.pipe';
     HelloComponent,
     CompteurComponent,
     TimerComponent,
-    TimerPipe,
     HomeComponent,
     NotFoundComponent,
+    NavbarComponent,
+    TimerPipe,
   ],
   imports: [
     BrowserModule,

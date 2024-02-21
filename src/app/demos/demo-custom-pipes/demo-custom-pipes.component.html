@@ -1,0 +1,12 @@
+<h3>Démonstration sur les Customs Pipes</h3>
+
+<p>Commande pour créer un pipe : 
+    <code>ng g p path/to/pipe</code>
+</p>
+
+<h4>Récupération d'un objet sur base d'un id :</h4>
+<p>Formateur n°1 : {{ formateurs | info : 1 | json }}</p>
+<p>Formateur n°2 : {{ formateurs | info : 2 : 'prenom'}}</p>
+
+<h4>Somme des valeurs :</h4>
+<p>Somme : {{ 0 | reduce : 5 : 6 : 78 : 12 : 3 : 1 : 0 : 3 : 21 : 6 : 4 : 2 : 3 : 0 : 4 }}</p>

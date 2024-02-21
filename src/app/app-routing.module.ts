@@ -21,6 +21,7 @@ const routes: Routes = [
   //     { path: 'todolist', component: ToDoListComponent }
   //   ]
   // },
+  { path: 'exos', loadChildren: () => import('./exos/exos.module').then(m => m.ExosModule) },
 
   // Démonstrations
   // Chargement à la demande → Lazy-Loading
